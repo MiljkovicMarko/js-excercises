@@ -8,6 +8,7 @@ describe('Sum and product', function() {
   });
 
   it('should sum the numbers from 1 to n when the option is "sum"', function() {
+  console.log(sumProduct.calculate(6, { mode: 'sum' }))
     expect(sumProduct.calculate(6, { mode: 'sum' })).toBe(21);
   });
 

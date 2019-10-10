@@ -5,7 +5,7 @@ var List = function() {
   'use strict';
 
   function has(list, element) {
-
+    return list.indexOf(element)>=0;
   }
 
   return {

@@ -6,7 +6,8 @@ var MyFunction = function() {
   'use strict';
 
   function applyFunction(list, f) {
-
+    for(let i=0;i<list.length;i++) list[i]=f(list[i]);
+    return list;
   }
 
   return {

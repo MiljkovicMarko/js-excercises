@@ -6,7 +6,14 @@ var MultiplicationTable = function() {
   'use strict';
 
   function generate5() {
-
+    let tbl2d=[[0,1,2,3,4,5]];
+    for(let i=1;i<6;i++){
+      tbl2d.push([i]);
+      for(let j=1;j<6;j++){
+        tbl2d[i].push(i*j);
+      }
+    }
+    return tbl2d;
   }
 
   return {
